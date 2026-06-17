@@ -21,7 +21,7 @@ export default function Types() {
 
     return (
         <div>
-            {types.map((item, index) =>
+            {types.slice(0, 16).map((item, index) =>
                 <div>
                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-viii/sword-shield/small/${index+1}.png`}></img>
                     <h1>{item.name}</h1>
