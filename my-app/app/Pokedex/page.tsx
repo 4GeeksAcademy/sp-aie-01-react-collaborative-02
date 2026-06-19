@@ -27,22 +27,13 @@ export default function Pokedex(){
 
     return(
 
-        <div>
             {pokedex.map((item, index) =>  
             
             <div>    
-                
-
+                <img src={></img>
+                    <h1>{item.name}</h1>
             </div>)}
-
-
-            
-            
-            
-            
-            }
-
-        </div>
     )
     
 }
+
