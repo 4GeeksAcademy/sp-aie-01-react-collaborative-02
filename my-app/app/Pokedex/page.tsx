@@ -26,14 +26,14 @@ export default function Pokedex(){
 
 
     return(
-
+			<div>    
             {pokedex.map((item, index) =>  
             
-            <div>    
-                <img src={></img>
+					<div> 
+                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index+1}.png`}></img>
                     <h1>{item.name}</h1>
-            </div>)}
-    )
+					</div>
+           )}
+     </div>)
     
 }
-
