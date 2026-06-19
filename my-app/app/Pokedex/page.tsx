@@ -5,13 +5,13 @@ export default function Pokedex(){
     const [ pokedex, setPokedex] = useState([])
 
     	const getPokedex = async () => {
-		const response = await fetch('https://pokeapi.co/api/v2/generation/1')
+		const response = await fetch('https://pokeapi.co/api/v2/pokedex/2/')
 		if (!response.ok) {
 			console.log('falso', response.status)
 			return
 		}
 		const data = await response.json()
-		setPokedex(data.pokemon_species)
+		setPokedex(data.pokemon_entries)
 
         	useEffect(() => {
 		    getPokedex()
