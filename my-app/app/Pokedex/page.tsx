@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import { useEffect, useState } from "react";
 
@@ -11,19 +13,18 @@ export default function Pokedex(){
 			return
 		}
 		const data = await response.json()
+		
 		setPokedex(data.pokemon_entries)
-
-        	useEffect(() => {
-		    getPokedex()
-
-	}, [])
-
 
 
 	}
+	        useEffect(() => {
+		    getPokedex()
 
+			}, [])
 
-
+			console.log("La data es")
+			console.log(pokedex)
 
     return(
 			<div>    
