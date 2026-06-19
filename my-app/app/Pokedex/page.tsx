@@ -32,7 +32,7 @@ export default function Pokedex(){
             
 					<div> 
                 <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index+1}.png`}></img>
-                    <h1>{item.name}</h1>
+                    <h1>{item.pokemon_species.name}</h1>
 					</div>
            )}
      </div>)
